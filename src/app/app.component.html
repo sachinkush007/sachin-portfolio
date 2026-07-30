@@ -1,0 +1,167 @@
+<header class="nav-wrap">
+  <nav class="nav container">
+    <a class="brand" href="#home" (click)="closeMenu()"><span>SK</span><b>Sachin.dev</b></a>
+    <button class="menu" (click)="toggleMenu()" aria-label="Toggle navigation">☰</button>
+    <div class="links" [class.open]="menuOpen">
+      <a href="#home" (click)="closeMenu()">Home</a>
+      <a href="#about" (click)="closeMenu()">About</a>
+      <a href="#experience" (click)="closeMenu()">Experience</a>
+      <a href="#projects" (click)="closeMenu()">Projects</a>
+      <a href="#contact" (click)="closeMenu()">Contact</a>
+      <a class="nav-cta" href="mailto:sachin777kushwaha@gmail.com">Hire Me</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section id="home" class="hero container">
+    <div class="hero-copy">
+      <div class="status"><i></i> Available for new opportunities</div>
+      <p class="eyebrow">HELLO, I'M</p>
+      <h1>Sachin <span>Kumar.</span></h1>
+      <h2>Java Full Stack Developer</h2>
+      <p class="lead">I build scalable backend systems and polished web experiences using Java, Spring Boot, Microservices and Angular — with a focus on clean code, performance and reliable delivery.</p>
+      <div class="actions">
+        <a class="primary" href="#projects">Explore My Work <span>→</span></a>
+        <a class="secondary" href="mailto:sachin777kushwaha@gmail.com">Let's Talk</a>
+      </div>
+      <div class="mini-links">
+        <a href="https://github.com/sachinkush007" target="_blank" rel="noreferrer">GitHub ↗</a>
+        <a href="https://linkedin.com/in/sachinkush007" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+      </div>
+    </div>
+
+    <!-- <div class="hero-art">
+      <div class="glow"></div>
+      <div class="code-card">
+        <div class="dots"><i></i><i></i><i></i><span>Developer.java</span></div>
+        <pre><code><em>public class</em> <b>SachinKumar</b> {{ '{' }}
+  String role = <strong>"Full Stack Developer"</strong>;
+  String[] stack = {{ '{' }}
+    <strong>"Java"</strong>, <strong>"Spring Boot"</strong>,
+    <strong>"Microservices"</strong>, <strong>"Angular"</strong>
+  {{ '}' }};
+
+  <em>void</em> build() {{ '{' }}
+    solveProblems();
+    shipReliableSoftware();
+  {{ '}' }}
+{{ '}' }}</code></pre>
+      </div>
+      <div class="floating one">3+<small>Years</small></div>
+      <div class="floating two">4Cr+<small>Records</small></div>
+    </div> -->
+  <div class="hero-visual">
+
+  <div class="portrait-wrap">
+
+    <div class="portrait-number">01</div>
+
+    <div class="portrait-frame">
+      <img
+        src="images/sachin.png"
+        alt="Sachin Kumar - Java Full Stack Developer"
+        class="profile-photo"
+      />
+    </div>
+
+    <div class="experience-badge">
+      <strong>3+</strong>
+      <span>YEARS OF<br>EXPERIENCE</span>
+    </div>
+
+    <div class="developer-tag">
+      <span class="tag-dot"></span>
+      JAVA / SPRING BOOT
+    </div>
+
+  </div>
+
+  <div class="hero-code">
+    <span>&lt;developer&gt;</span>
+    <strong>SACHIN KUMAR</strong>
+    <span>&lt;/developer&gt;</span>
+  </div>
+
+</div>
+  </section>
+
+  <section class="ticker">
+    <div class="container skill-row">
+      <span *ngFor="let skill of skills">{{skill}}</span>
+    </div>
+  </section>
+
+  <section id="about" class="section container about">
+    <div>
+      <p class="eyebrow">ABOUT ME</p>
+      <h3>Backend strength.<br><span>Full-stack perspective.</span></h3>
+    </div>
+    <div class="about-copy">
+      <p>I'm a software engineer focused on building practical products that handle real users, real workflows and real production constraints.</p>
+      <p>My work spans secure APIs, authentication, payments, databases, caching, cloud deployment and responsive frontend applications.</p>
+      <div class="facts">
+        <div><b>3+</b><span>Years Experience</span></div>
+        <div><b>3</b><span>Featured Projects</span></div>
+        <div><b>Java</b><span>Core Specialization</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section dark">
+    <div class="container">
+      <p class="eyebrow">EXPERIENCE</p>
+      <h3>Where I've <span>worked.</span></h3>
+      <div class="timeline">
+        <article *ngFor="let item of experience">
+          <div class="time">{{item.period}}</div>
+          <div class="line"><i></i></div>
+          <div class="job">
+            <h4>{{item.role}}</h4>
+            <h5>{{item.company}}</h5>
+            <ul><li *ngFor="let point of item.points">{{point}}</li></ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section container">
+    <div class="section-head">
+      <div><p class="eyebrow">SELECTED WORK</p><h3>Projects with <span>impact.</span></h3></div>
+      <p>Enterprise, government, AI and mobile projects built around scalable architecture and useful user experiences.</p>
+    </div>
+    <div class="projects">
+      <article class="project" *ngFor="let p of projects">
+        <div class="project-top"><div class="project-icon">{{p.icon}}</div><span>{{p.period}}</span></div>
+        <p class="project-role">{{p.role}}</p>
+        <h4>{{p.name}}</h4>
+        <p>{{p.text}}</p>
+        <div class="tags"><span *ngFor="let tag of p.tags">{{tag}}</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section container tech">
+    <p class="eyebrow">TECH STACK</p>
+    <h3>Tools I use to <span>ship.</span></h3>
+    <div class="tech-grid">
+      <div><b>Backend</b><p>Java 8+, Spring, Spring Boot, Microservices, REST API, JPA, Hibernate, Spring Security, JWT, OAuth2.0, Kafka</p></div>
+      <div><b>Frontend</b><p>Angular, React, Ionic, RxJS, TypeScript, JavaScript, HTML5, CSS3, SAP Spartacus</p></div>
+      <div><b>Data & Cloud</b><p>PostgreSQL, MySQL, MongoDB, Redis, H2, AWS, Docker</p></div>
+      <div><b>Engineering</b><p>GitHub, Jira, Maven, Swagger, JUnit, Mockito, Postman, IntelliJ</p></div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container contact-inner">
+      <div><p class="eyebrow">GET IN TOUCH</p><h3>Have a role or project?<br><span>Let's build something useful.</span></h3></div>
+      <div class="contact-card">
+        <p>I'm open to Java backend, full-stack and freelance development opportunities.</p>
+          <a class="primary" href="mailto:sachin777kushwaha@gmail.com">sachin777kushwaha&#64;gmail.com →</a>        <div class="contact-meta"><span>Noida, India</span><span>+91 8433112543</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="container"><b>SK / Sachin Kumar</b><span>© {{year}} Built with Angular.</span></div></footer>
