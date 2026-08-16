@@ -1,167 +1,1219 @@
 <header class="nav-wrap">
   <nav class="nav container">
-    <a class="brand" href="#home" (click)="closeMenu()"><span>SK</span><b>Sachin.dev</b></a>
-    <button class="menu" (click)="toggleMenu()" aria-label="Toggle navigation">☰</button>
+
+    <a class="brand" href="#home" (click)="closeMenu()">
+      <span>SK</span>
+      <b>Sachin.dev</b>
+    </a>
+
+    <button class="menu" (click)="toggleMenu()" aria-label="Toggle navigation">
+      ☰
+    </button>
+
     <div class="links" [class.open]="menuOpen">
+
       <a href="#home" (click)="closeMenu()">Home</a>
+
       <a href="#about" (click)="closeMenu()">About</a>
+
       <a href="#experience" (click)="closeMenu()">Experience</a>
+
       <a href="#projects" (click)="closeMenu()">Projects</a>
+
+      <a href="#skills" (click)="closeMenu()">Skills</a>
+
+      <a href="#education" (click)="closeMenu()">Education</a>
+
       <a href="#contact" (click)="closeMenu()">Contact</a>
-      <a class="nav-cta" href="mailto:sachin777kushwaha@gmail.com">Hire Me</a>
+
+      <a class="nav-cta" href="mailto:sachin777kushwaha@gmail.com">
+        Hire Me
+      </a>
+
     </div>
+
   </nav>
 </header>
 
+
 <main>
+
+  <!-- =========================
+       HERO
+  ========================= -->
+
   <section id="home" class="hero container">
+
     <div class="hero-copy">
-      <div class="status"><i></i> Available for new opportunities</div>
-      <p class="eyebrow">HELLO, I'M</p>
-      <h1>Sachin <span>Kumar.</span></h1>
-      <h2>Java Full Stack Developer</h2>
-      <p class="lead">I build scalable backend systems and polished web experiences using Java, Spring Boot, Microservices and Angular — with a focus on clean code, performance and reliable delivery.</p>
+
+      <div class="status">
+        <i></i>
+        Available for new opportunities
+      </div>
+
+      <p class="eyebrow">
+        HELLO, I'M
+      </p>
+
+      <h1>
+        Sachin <span>Kumar.</span>
+      </h1>
+
+      <h2>
+        Java Full Stack Developer
+      </h2>
+
+      <p class="lead">
+        Full Stack Java Developer with 3+ years of experience
+        building scalable web, mobile and enterprise applications
+        using Java, Spring Boot, Microservices, Angular and
+        SAP Commerce Cloud.
+      </p>
+
       <div class="actions">
-        <a class="primary" href="#projects">Explore My Work <span>→</span></a>
-        <a class="secondary" href="mailto:sachin777kushwaha@gmail.com">Let's Talk</a>
+
+        <a class="primary" href="#projects">
+          Explore My Work <span>→</span>
+        </a>
+
+
+        <a class="secondary cv-button" href="assets/Sachin-Kumar-CV.pdf" download="Sachin-Kumar-CV.pdf">
+          Download CV ↓
+        </a>
+
+        <a class="secondary" href="mailto:sachin777kushwaha@gmail.com">
+          Let's Talk
+        </a>
+
+
+
       </div>
+
       <div class="mini-links">
-        <a href="https://github.com/sachinkush007" target="_blank" rel="noreferrer">GitHub ↗</a>
-        <a href="https://linkedin.com/in/sachinkush007" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+
+        <a href="https://github.com/sachinkush007" target="_blank" rel="noopener noreferrer" class="social-link">
+
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+
+            <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.167 6.839 9.489.5.092.682-.217.682-.482
+        0-.237-.009-.866-.013-1.7-2.782.604-3.369-1.342-3.369-1.342-.455-1.155-1.11-1.463-1.11-1.463
+        -.908-.62.069-.608.069-.608 1.004.071 1.532 1.032 1.532 1.032
+        .892 1.529 2.341 1.087 2.91.831.091-.646.349-1.087.636-1.338
+        -2.22-.253-4.555-1.111-4.555-4.943 0-1.091.39-1.984 1.029-2.683
+        -.103-.253-.446-1.272.098-2.65 0 0 .84-.269 2.75 1.025A9.564
+        9.564 0 0 1 12 6.844a9.57 9.57 0 0 1 2.504.337c1.909-1.294
+        2.748-1.025 2.748-1.025.546 1.378.202 2.397.1 2.65.64.699
+        1.028 1.592 1.028 2.683 0 3.842-2.338 4.687-4.565 4.935
+        .359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.744
+        0 .267.18.578.688.48A10.001 10.001 0 0 0 22 12C22 6.477
+        17.523 2 12 2Z" />
+
+          </svg>
+
+          <span>GitHub</span>
+
+          <small>↗</small>
+
+        </a>
+
+
+        <a href="https://linkedin.com/in/sachinkush007" target="_blank" rel="noopener noreferrer" class="social-link">
+
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037
+        -1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046
+        c.477-.9 1.637-1.85 3.37-1.85 3.604 0 4.267 2.37 4.267
+        5.455v6.286ZM5.337 7.433a2.062 2.062 0 1 1 0-4.123
+        2.062 2.062 0 0 1 0 4.123ZM3.555 20.452h3.558V9H3.555v11.452Z" />
+
+          </svg>
+
+          <span>LinkedIn</span>
+
+          <small>↗</small>
+
+        </a>
+
       </div>
+
     </div>
 
-    <!-- <div class="hero-art">
-      <div class="glow"></div>
-      <div class="code-card">
-        <div class="dots"><i></i><i></i><i></i><span>Developer.java</span></div>
-        <pre><code><em>public class</em> <b>SachinKumar</b> {{ '{' }}
-  String role = <strong>"Full Stack Developer"</strong>;
-  String[] stack = {{ '{' }}
-    <strong>"Java"</strong>, <strong>"Spring Boot"</strong>,
-    <strong>"Microservices"</strong>, <strong>"Angular"</strong>
-  {{ '}' }};
 
-  <em>void</em> build() {{ '{' }}
-    solveProblems();
-    shipReliableSoftware();
-  {{ '}' }}
-{{ '}' }}</code></pre>
+    <!-- HERO IMAGE -->
+
+    <div class="hero-visual">
+
+      <div class="portrait-wrap">
+
+        <div class="portrait-number">
+          01
+        </div>
+
+        <div class="portrait-frame">
+
+          <img src="images/sachin.png" alt="Sachin Kumar - Java Full Stack Developer" class="profile-photo" />
+
+        </div>
+
+        <div class="experience-badge">
+
+          <strong>3+</strong>
+
+          <span>
+            YEARS OF<br>
+            EXPERIENCE
+          </span>
+
+        </div>
+
+        <div class="developer-tag">
+
+          <span class="tag-dot"></span>
+
+          JAVA / SPRING BOOT
+
+        </div>
+
       </div>
-      <div class="floating one">3+<small>Years</small></div>
-      <div class="floating two">4Cr+<small>Records</small></div>
-    </div> -->
-  <div class="hero-visual">
 
-  <div class="portrait-wrap">
+      <div class="hero-code">
 
-    <div class="portrait-number">01</div>
+        <span>&lt;developer&gt;</span>
 
-    <div class="portrait-frame">
-      <img
-        src="images/sachin.png"
-        alt="Sachin Kumar - Java Full Stack Developer"
-        class="profile-photo"
-      />
+        <strong>
+          SACHIN KUMAR
+        </strong>
+
+        <span>&lt;/developer&gt;</span>
+
+      </div>
+
     </div>
 
-    <div class="experience-badge">
-      <strong>3+</strong>
-      <span>YEARS OF<br>EXPERIENCE</span>
-    </div>
-
-    <div class="developer-tag">
-      <span class="tag-dot"></span>
-      JAVA / SPRING BOOT
-    </div>
-
-  </div>
-
-  <div class="hero-code">
-    <span>&lt;developer&gt;</span>
-    <strong>SACHIN KUMAR</strong>
-    <span>&lt;/developer&gt;</span>
-  </div>
-
-</div>
   </section>
+
+
+  <!-- =========================
+       TECH TICKER
+  ========================= -->
 
   <section class="ticker">
+
     <div class="container skill-row">
-      <span *ngFor="let skill of skills">{{skill}}</span>
+
+      <span *ngFor="let skill of skills">
+        {{ skill }}
+      </span>
+
     </div>
+
   </section>
+
+
+  <!-- =========================
+       ABOUT
+  ========================= -->
 
   <section id="about" class="section container about">
+
     <div>
-      <p class="eyebrow">ABOUT ME</p>
-      <h3>Backend strength.<br><span>Full-stack perspective.</span></h3>
+
+      <p class="eyebrow">
+        ABOUT ME
+      </p>
+
+      <h3>
+        Backend strength.
+        <br>
+        <span>Full-stack perspective.</span>
+      </h3>
+
     </div>
+
+
     <div class="about-copy">
-      <p>I'm a software engineer focused on building practical products that handle real users, real workflows and real production constraints.</p>
-      <p>My work spans secure APIs, authentication, payments, databases, caching, cloud deployment and responsive frontend applications.</p>
+
+      <p>
+        I'm a Full Stack Java Developer with 3+ years of
+        professional experience building scalable web,
+        mobile and enterprise applications.
+      </p>
+
+      <p>
+        My core strength is backend development using Java,
+        Spring Boot, Microservices, REST APIs, JPA and Hibernate,
+        combined with frontend experience in Angular, React and Ionic.
+      </p>
+
+      <p>
+        I've worked across government technology, enterprise
+        eCommerce, AI-driven applications and mobile solutions,
+        giving me experience with real production systems,
+        business workflows and client requirements.
+      </p>
       <div class="facts">
-        <div><b>3+</b><span>Years Experience</span></div>
-        <div><b>3</b><span>Featured Projects</span></div>
-        <div><b>Java</b><span>Core Specialization</span></div>
+
+        <div>
+          <b>3+</b>
+          <span>Years Experience</span>
+        </div>
+
+
+        <div>
+          <b>4+</b>
+          <span>Major Projects</span>
+        </div>
+
+        <div>
+          <b>40M+</b>
+          <span>Farmer Records</span>
+        </div>
+
+        <div>
+          <b>Java</b>
+          <span>Core Specialization</span>
+        </div>
+
       </div>
+
     </div>
+
   </section>
+
+
+  <!-- =========================
+       WHAT I DO
+  ========================= -->
+
+  <section class="section dark">
+
+    <div class="container">
+
+      <p class="eyebrow">
+        WHAT I DO
+      </p>
+
+      <h3>
+        Building systems that
+        <span>solve real problems.</span>
+      </h3>
+
+      <div class="tech-grid">
+
+        <!-- Large-Scale Government Systems -->
+        <div>
+          <b>Large-Scale Government Systems</b>
+
+          <p>
+            Worked on a large-scale government platform serving
+            <strong>4+ crore farmers across 75 districts and 50+ government schemes</strong>,
+            supporting complex farmer workflows, subsidy processing,
+            scheme execution and large-volume data management.
+          </p>
+        </div>
+
+
+        <!-- Payments & Digital Distribution -->
+        <div>
+          <b>Payments & Digital Distribution</b>
+
+          <p>
+            Worked on large-value payment and subsidy workflows,
+            integrating <strong>Aadhaar APIs, DDO Portal and PFMS</strong>,
+            along with physical <strong>POS devices for SEED distribution</strong>,
+            connecting digital government processes with real-world
+            beneficiary distribution.
+          </p>
+        </div>
+
+
+        <!-- AI & Mobile Applications -->
+        <div>
+          <b>AI & Mobile Applications</b>
+
+          <p>
+            Worked on <strong>AI-driven applications</strong> including
+            traffic intelligence and task estimation solutions.
+            Also developed mobile functionality involving
+            <strong>camera, video capture, GPS, authentication
+              and real-time data</strong>, focusing on practical
+            AI and user-facing applications.
+          </p>
+        </div>
+
+
+        <!-- Enterprise & Production Engineering -->
+        <div>
+          <b>Enterprise & Production Engineering</b>
+
+          <p>
+            Worked on enterprise eCommerce and production systems,
+            including <strong>SAP Commerce Cloud</strong> and
+            large-scale backend applications. Experienced in
+            <strong>SQL optimization, Redis caching, scalable database
+              workflows, API integrations and production issue resolution</strong>.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       EXPERIENCE
+  ========================= -->
 
   <section id="experience" class="section dark">
+
     <div class="container">
-      <p class="eyebrow">EXPERIENCE</p>
-      <h3>Where I've <span>worked.</span></h3>
+
+      <p class="eyebrow">
+        EXPERIENCE
+      </p>
+
+      <h3>
+        Where I've
+        <span>worked.</span>
+      </h3>
+
+
       <div class="timeline">
+
         <article *ngFor="let item of experience">
-          <div class="time">{{item.period}}</div>
-          <div class="line"><i></i></div>
-          <div class="job">
-            <h4>{{item.role}}</h4>
-            <h5>{{item.company}}</h5>
-            <ul><li *ngFor="let point of item.points">{{point}}</li></ul>
+
+          <div class="time">
+            {{ item.period }}
           </div>
+
+          <div class="line">
+            <i></i>
+          </div>
+
+          <div class="job">
+
+            <h4>
+              {{ item.role }}
+            </h4>
+
+            <h5>
+              {{ item.company }}
+            </h5>
+
+            <ul>
+
+              <li *ngFor="let point of item.points">
+
+                {{ point }}
+
+              </li>
+
+            </ul>
+
+          </div>
+
         </article>
+
       </div>
+
+
+      <!-- AURIONPRO DETAIL -->
+
+      <div class="experience-highlight">
+
+        <p class="eyebrow">
+          AURIONPRO SOLUTIONS
+        </p>
+
+        <h4>
+          Government technology & scalable backend systems
+        </h4>
+
+        <p>
+          Worked on large-scale government applications using
+          Java, Spring Boot and PostgreSQL. Integrated Aadhaar
+          authentication, payment APIs and workflow modules
+          while optimizing SQL queries and implementing Redis
+          caching for improved performance.
+        </p>
+
+      </div>
+
+
+      <!-- CLAVRIT DETAIL -->
+
+      <div class="experience-highlight">
+
+        <p class="eyebrow">
+          CLAVRIT DIGITAL SOLUTIONS
+        </p>
+
+        <h4>
+          SAP Commerce, AI & Full-Stack Development
+        </h4>
+
+        <p>
+          Worked on SAP Commerce Cloud, AI-driven solutions and HRMS
+          applications across backend and frontend development. Built
+          REST APIs using Java and Spring, developed interfaces with
+          Angular and Ionic, and customized SAP Hybris components
+          including Backoffice, Solr, CronJobs, Hot Folder and OCC APIs.
+        </p>
+
+      </div>
+
     </div>
+
   </section>
+
+
+  <!-- =========================
+       PROJECTS
+  ========================= -->
 
   <section id="projects" class="section container">
+
     <div class="section-head">
-      <div><p class="eyebrow">SELECTED WORK</p><h3>Projects with <span>impact.</span></h3></div>
-      <p>Enterprise, government, AI and mobile projects built around scalable architecture and useful user experiences.</p>
+
+      <div>
+
+        <p class="eyebrow">
+          SELECTED WORK
+        </p>
+
+        <h3>
+          Projects with
+          <span>impact.</span>
+        </h3>
+
+      </div>
+
+      <p>
+        Enterprise, government, AI and mobile projects
+        built around scalable architecture and useful
+        user experiences.
+      </p>
+
     </div>
+
+
     <div class="projects">
-      <article class="project" *ngFor="let p of projects">
-        <div class="project-top"><div class="project-icon">{{p.icon}}</div><span>{{p.period}}</span></div>
-        <p class="project-role">{{p.role}}</p>
-        <h4>{{p.name}}</h4>
-        <p>{{p.text}}</p>
-        <div class="tags"><span *ngFor="let tag of p.tags">{{tag}}</span></div>
+
+      <!-- AGRI DARSHAN -->
+
+      <article class="project">
+
+        <div class="project-top">
+
+          <div class="project-icon">
+            🌾
+          </div>
+
+          <span>
+            Dec 2024 – Dec 2025
+          </span>
+
+        </div>
+
+        <p class="project-role">
+          Java Developer / Software Developer
+        </p>
+
+        <h4>
+          Agri Darshan
+        </h4>
+
+        <p>
+          Large-scale government platform designed around
+          farmer schemes, subsidy processing and SEED distribution.
+        </p>
+
+
+        <ul class="project-details">
+
+          <li>
+            Developed CMDashboard, CMS and Farmer Lottery modules.
+          </li>
+
+          <li>
+            Integrated Aadhaar Authentication,
+            DDO Payment and Pine Labs POS.
+          </li>
+
+          <li>
+            Designed workflow and state-history tables
+            with audit tracking.
+          </li>
+
+          <li>
+            Optimized PostgreSQL queries and implemented
+            Redis caching.
+          </li>
+
+          <li>
+            Worked with more than 4 crore farmer records.
+          </li>
+
+          <li>
+            Worked onsite with government officials
+            for requirements and production issues.
+          </li>
+
+        </ul>
+
+
+        <div class="tags">
+
+          <span>Java</span>
+          <span>Spring Boot</span>
+          <span>PostgreSQL</span>
+          <span>Redis</span>
+          <span>REST API</span>
+
+        </div>
+
       </article>
+
+
+      <!-- MOTOLENSAI -->
+
+      <article class="project">
+
+        <div class="project-top">
+
+          <div class="project-icon">
+            🚗
+          </div>
+
+          <span>
+            Sep 2023 – May 2024
+          </span>
+
+        </div>
+
+        <p class="project-role">
+          Frontend Developer
+        </p>
+
+        <h4>
+          MotoLensAI
+        </h4>
+
+        <p>
+          AI-powered mobile application focused on
+          traffic insights, road safety and driving decisions.
+        </p>
+
+
+        <ul class="project-details">
+
+          <li>
+            Developed AI-powered traffic features using real-time traffic insights to support road-safety and driving
+            decisions
+          </li>
+
+          <li>
+            Implemented Firebase OTP and social login.
+          </li>
+
+          <li>
+            Developed camera and video capture functionality.
+          </li>
+
+          <li>
+            Applied binary search techniques to improve processing efficiency for large datasets.
+          </li>
+
+          <li>
+            Implemented GPS tracking and location-based functionality.
+          </li>
+
+          <li>
+            Worked on secure media sharing and
+            cross-device reliability.
+          </li>
+
+        </ul>
+
+
+        <div class="tags">
+
+          <span>Angular</span>
+          <span>Ionic</span>
+          <span>Capacitor</span>
+          <span>Cordova</span>
+          <span>Firebase</span>
+          <span>GPS</span>
+
+        </div>
+
+      </article>
+
+
+      <!-- ESTIMATION TOOL -->
+
+      <article class="project">
+
+        <div class="project-top">
+
+          <div class="project-icon">
+            🤖
+          </div>
+
+          <span>
+            Jan 2023 – Jul 2023
+          </span>
+
+        </div>
+
+        <p class="project-role">
+          Full Stack Developer
+        </p>
+
+        <h4>
+          Estimation Tool
+        </h4>
+
+        <p>
+          AI-driven project estimation and analytics
+          solution integrated with JIRA.
+        </p>
+
+
+        <ul class="project-details">
+
+          <li>
+            Integrated JIRA API for AI-based task estimation and project analytics.
+          </li>
+
+          <li>
+            Worked on AI-based task time estimation.
+          </li>
+
+          <li>
+            Developed analytics dashboards using Angular for project insights and estimation results.
+          </li>
+
+          <li>
+            Developed RESTful services on AWS.
+          </li>
+
+          <li>
+            Implemented workflow and task lifecycle validations.
+          </li>
+
+          <li>
+            Used binary search techniques for efficient
+            large dataset processing.
+          </li>
+
+        </ul>
+
+
+        <div class="tags">
+
+          <span>Spring Boot</span>
+          <span>Angular</span>
+          <span>JIRA API</span>
+          <span>AWS</span>
+
+        </div>
+
+      </article>
+
+
+      <!-- MITRE10 -->
+
+      <article class="project">
+
+        <div class="project-top">
+
+          <div class="project-icon">
+            🛒
+          </div>
+
+          <span>
+            Jan 2023 – Aug 2023
+          </span>
+
+        </div>
+
+        <p class="project-role">
+          SAP Hybris Developer
+        </p>
+
+        <h4>
+          Mitre10
+        </h4>
+
+        <p>
+          Enterprise eCommerce application built using
+          SAP Hybris / SAP Commerce Cloud.
+        </p>
+
+
+        <ul class="project-details">
+
+          <li>
+            Customized SAP Hybris modules and Data Models.
+          </li>
+
+          <li>
+            Developed Populators, Converters and Interceptors.
+          </li>
+
+          <li>
+            Implemented Hot Folder for automated product imports.
+          </li>
+
+          <li>
+            Developed CronJobs for scheduled tasks.
+          </li>
+
+          <li>
+            Customized Backoffice and Solr attributes.
+          </li>
+
+          <li>
+            Developed email functionality for order
+            confirmations and cancellations.
+          </li>
+
+        </ul>
+
+
+        <div class="tags">
+
+          <span>SAP Hybris</span>
+          <span>Java</span>
+          <span>Spring</span>
+          <span>Solr</span>
+          <span>CronJobs</span>
+          <span>Hot Folder</span>
+
+        </div>
+
+      </article>
+
     </div>
+
   </section>
 
-  <section class="section container tech">
-    <p class="eyebrow">TECH STACK</p>
-    <h3>Tools I use to <span>ship.</span></h3>
+
+  <!-- =========================
+       SKILLS
+  ========================= -->
+
+  <section id="skills" class="section container tech">
+
+    <p class="eyebrow">
+      TECHNICAL SKILLS
+    </p>
+
+    <h3>
+      Everything I use to
+      <span>build & ship.</span>
+    </h3>
+
+
     <div class="tech-grid">
-      <div><b>Backend</b><p>Java 8+, Spring, Spring Boot, Microservices, REST API, JPA, Hibernate, Spring Security, JWT, OAuth2.0, Kafka</p></div>
-      <div><b>Frontend</b><p>Angular, React, Ionic, RxJS, TypeScript, JavaScript, HTML5, CSS3, SAP Spartacus</p></div>
-      <div><b>Data & Cloud</b><p>PostgreSQL, MySQL, MongoDB, Redis, H2, AWS, Docker</p></div>
-      <div><b>Engineering</b><p>GitHub, Jira, Maven, Swagger, JUnit, Mockito, Postman, IntelliJ</p></div>
+
+
+      <div>
+
+        <b>
+          Backend
+        </b>
+
+        <p>
+          Java, Java 8+, OOPs, Collection Framework,
+          Exception Handling, Multithreading, Python,
+          DSA, SQL
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <b>
+          Spring Ecosystem
+        </b>
+
+        <p>
+          Spring, Spring MVC, Spring Boot,
+          Microservices, REST APIs, JPA, Hibernate,
+          Spring Security, JWT, OAuth2.0, Kafka
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <b>
+          SAP Commerce
+        </b>
+
+        <p>
+          SAP Hybris, SAP Commerce Cloud, Backoffice,
+          OCC APIs, Impex, CronJobs, Solr, Hot Folder,
+          Data Models, Populators, Converters, Interceptors
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <b>
+          Frontend
+        </b>
+
+        <p>
+          Angular, React, Ionic, RxJS, HTML5, CSS3,
+          Bootstrap, JavaScript, TypeScript,
+          SAP Spartacus, JSP
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <b>
+          Databases
+        </b>
+
+        <p>
+          MySQL, PostgreSQL, MongoDB, Redis, H2, SQL
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <b>
+          Cloud & DevOps
+        </b>
+
+        <p>
+          AWS, Docker, GitHub Actions, Git, GitHub
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <b>
+          Testing
+        </b>
+
+        <p>
+          JUnit, Mockito, unit testing and API testing
+          with Postman
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <b>
+          Development Tools
+        </b>
+
+        <p>
+          Jira, Maven, Swagger, IntelliJ IDEA,
+          Eclipse, VS Code, MySQL Workbench, SQLyog
+        </p>
+
+      </div>
+
     </div>
+
   </section>
+
+
+  <!-- =========================
+       CAREER HIGHLIGHTS
+  ========================= -->
+
+  <section class="section dark">
+
+    <div class="container">
+
+      <p class="eyebrow">
+        CAREER HIGHLIGHTS
+      </p>
+
+      <h3>
+        What I bring to a
+        <span>team.</span>
+      </h3>
+
+
+      <div class="tech-grid">
+
+        <div>
+
+          <b>
+            Built for Real-World Scale
+          </b>
+
+          <p>
+            Worked on government systems supporting
+            <strong>4+ crore farmers, 50+ schemes and 75 districts</strong>,
+            where reliability, accuracy and performance directly
+            mattered to real users.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <b>
+            Performance That Matters
+          </b>
+
+          <p>
+            Improved system performance through
+            <strong>SQL optimization, Redis caching and efficient
+              data workflows</strong>, helping applications handle
+            millions of records and demanding production workloads.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <b>
+            From Requirement to Production
+          </b>
+
+          <p>
+            Worked closely with clients and business stakeholders,
+            understood real requirements, developed solutions,
+            resolved production issues and delivered features
+            through to real-world usage.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <b>
+            Beyond Just Coding
+          </b>
+
+          <p>
+            Contributed across <strong>backend, frontend, mobile,
+              AI and enterprise eCommerce</strong>, giving me the
+            ability to understand the complete system rather than
+            working on an isolated piece of code.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       EDUCATION
+  ========================= -->
+
+  <section id="education" class="section container">
+
+    <p class="eyebrow">
+      EDUCATION
+    </p>
+
+    <h3>
+      Academic
+      <span>background.</span>
+    </h3>
+
+
+    <div class="projects">
+
+
+      <article class="project">
+
+        <div class="project-top">
+
+          <div class="project-icon">
+            🎓
+          </div>
+
+          <span>
+            2021 – 2024
+          </span>
+
+        </div>
+
+        <p class="project-role">
+          B.Tech
+        </p>
+
+        <h4>
+          Computer Science Engineering
+        </h4>
+
+        <p>
+          JS Institute of Technology, Firozabad
+        </p>
+
+        <div class="tags">
+          <span>75%</span>
+          <span>Computer Science</span>
+        </div>
+
+      </article>
+
+
+      <article class="project">
+
+        <div class="project-top">
+
+          <div class="project-icon">
+            💻
+          </div>
+
+          <span>
+            2018 – 2021
+          </span>
+
+        </div>
+
+        <p class="project-role">
+          Diploma
+        </p>
+
+        <h4>
+          Information Technology
+        </h4>
+
+        <p>
+          Government Polytechnic Ghaziabad
+        </p>
+
+        <div class="tags">
+          <span>71%</span>
+          <span>Information Technology</span>
+        </div>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       CONTACT
+  ========================= -->
 
   <section id="contact" class="contact">
+
     <div class="container contact-inner">
-      <div><p class="eyebrow">GET IN TOUCH</p><h3>Have a role or project?<br><span>Let's build something useful.</span></h3></div>
-      <div class="contact-card">
-        <p>I'm open to Java backend, full-stack and freelance development opportunities.</p>
-          <a class="primary" href="mailto:sachin777kushwaha@gmail.com">sachin777kushwaha&#64;gmail.com →</a>        <div class="contact-meta"><span>Noida, India</span><span>+91 8433112543</span></div>
+
+      <div>
+
+        <p class="eyebrow">
+          GET IN TOUCH
+        </p>
+
+        <h3>
+          Have a role or project?
+          <br>
+          <span>
+            Let's build something useful.
+          </span>
+        </h3>
+
       </div>
+
+
+      <div class="contact-card">
+
+        <p>
+          I'm open to Java backend, full-stack,
+          SAP Commerce and freelance development
+          opportunities.
+        </p>
+
+
+        <a class="primary" href="mailto:sachin777kushwaha@gmail.com">
+
+          sachin777kushwaha&#64;gmail.com →
+
+        </a>
+
+
+        <div class="contact-meta">
+
+          <span>
+            Noida, India
+          </span>
+
+          <span>
+            +91 8433112543
+          </span>
+
+        </div>
+
+
+        <div class="mini-links">
+
+          <a href="https://linkedin.com/in/sachinkush007" target="_blank" rel="noreferrer">
+            LinkedIn ↗
+          </a>
+
+          <a href="https://github.com/sachinkush007" target="_blank" rel="noreferrer">
+            GitHub ↗
+          </a>
+
+        </div>
+
+      </div>
+
     </div>
+
   </section>
+
 </main>
 
-<footer><div class="container"><b>SK / Sachin Kumar</b><span>© {{year}} Built with Angular.</span></div></footer>
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+  <div class="container">
+
+    <b>
+      SK / Sachin Kumar
+    </b>
+
+    <span>
+      © {{ year }} Built with Angular.
+    </span>
+
+  </div>
+
+</footer>
+<app-ai-chat></app-ai-chat>
+<router-outlet></router-outlet>

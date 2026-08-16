@@ -348,10 +348,13 @@ body {
 }
 
 .facts {
-    display: grid;
+display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    margin-top: 40px
+    margin-top: 40px;
+    align-items: stretch;
+    justify-items: stretch;
+    grid-auto-flow: column;
 }
 
 .facts div {
@@ -914,6 +917,74 @@ footer span {
   margin: 4px 0;
 }
 
+ .project-details {
+  margin: 20px 0;
+  padding-left: 18px;
+}
+
+.project-details li {
+  margin-bottom: 9px;
+  color: rgb(0 0 0 / 47%);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+ .experience-highlight {
+  margin-top: 55px;
+  padding: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.025);
+  border-radius: 14px;
+}
+
+.experience-highlight h4 {
+  margin: 8px 0 12px;
+}
+
+.experience-highlight p:last-child {
+  max-width: 800px;
+  color: rgba(255, 255, 255, 0.68);
+  line-height: 1.7;
+}
+
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.social-link svg {
+  width: 17px;
+  height: 17px;
+  fill: currentColor;
+}
+
+.social-link span {
+  font-weight: 600;
+}
+
+.social-link small {
+  font-size: 12px;
+  opacity: 0.6;
+  transition: transform 0.2s ease;
+}
+
+.social-link:hover small {
+  transform: translate(2px, -2px);
+}
+
+.cv-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  white-space: nowrap;
+}
+
+.cv-button:hover {
+  transform: translateY(-2px);
+}
 
 /* Mobile */
 

@@ -1,19 +1,31 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ChatService } from './service/chat.service';
+import { FormsModule } from '@angular/forms';
+import { RouterOutlet } from "@angular/router";
+import { AiChatComponent } from './component/ai-chat/ai-chat.component';
+
+interface ChatMessage {
+  sender: 'user' | 'ai';
+  text: string;
+}
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule, RouterOutlet,AiChatComponent],
   templateUrl: './app.component.html'
 })
+
+
 export class AppComponent {
+
   menuOpen = false;
   year = new Date().getFullYear();
 
   skills = [
-    'Java 8+','Spring Boot','Microservices','REST APIs','Angular','React',
-    'PostgreSQL','MySQL','MongoDB','Redis','Kafka','Docker','AWS','SAP Hybris'
+    'Java 8+', 'Spring Boot', 'Microservices', 'REST APIs', 'Angular', 'React',
+    'PostgreSQL', 'MySQL', 'MongoDB', 'Redis', 'Kafka', 'Docker', 'AWS', 'SAP Hybris'
   ];
 
   projects = [
@@ -22,7 +34,7 @@ export class AppComponent {
       role: 'Java Developer',
       period: 'Dec 2024 — Dec 2025',
       text: 'Large-scale government agriculture platform with CMDashboard, CMS, farmer lottery, Aadhaar authentication, DDO payments, Pine Labs POS, audit workflows and Redis-backed performance.',
-      tags: ['Java','Spring Boot','PostgreSQL','Redis','Aadhaar','Payments'],
+      tags: ['Java', 'Spring Boot', 'PostgreSQL', 'Redis', 'Aadhaar', 'Payments'],
       icon: 'AG'
     },
     {
@@ -30,7 +42,7 @@ export class AppComponent {
       role: 'Frontend Developer',
       period: 'Sep 2023 — May 2024',
       text: 'AI-powered mobile experience for road-safety insights with Firebase OTP/social login, camera and video capture, GPS tracking and secure media sharing.',
-      tags: ['Angular','Ionic','Capacitor','Firebase','GPS','AI'],
+      tags: ['Angular', 'Ionic', 'Capacitor', 'Firebase', 'GPS', 'AI'],
       icon: 'ML'
     },
     {
@@ -38,7 +50,7 @@ export class AppComponent {
       role: 'Full Stack Developer',
       period: 'Jan 2023 — Jul 2023',
       text: 'AI-assisted task estimation and analytics solution integrating JIRA APIs, REST services and AWS-hosted workflows with scalable data processing.',
-      tags: ['Spring Boot','Angular','JIRA API','AWS','REST API'],
+      tags: ['Spring Boot', 'Angular', 'JIRA API', 'AWS', 'REST API'],
       icon: 'ET'
     }
   ];

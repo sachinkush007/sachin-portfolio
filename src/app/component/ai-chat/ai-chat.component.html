@@ -1,0 +1,257 @@
+<!-- =====================================
+     FLOATING AI BUTTON
+===================================== -->
+
+<button
+  *ngIf="!chatOpen"
+  class="ai-chat-button"
+  type="button"
+  (click)="toggleChat()">
+
+  <span class="ai-button-icon">
+    SK
+  </span>
+
+  <span>
+    Ask Sachin's AI
+  </span>
+
+</button>
+
+
+<!-- =====================================
+     CHAT WINDOW
+===================================== -->
+
+<div
+  *ngIf="chatOpen"
+  class="ai-chat-window">
+
+
+  <!-- HEADER -->
+
+  <div class="ai-chat-header">
+
+    <div class="ai-chat-profile">
+
+      <div class="ai-avatar">
+        SK
+      </div>
+
+      <div class="ai-title">
+
+        <strong>
+          Sachin's AI
+        </strong>
+
+        <span>
+          Ask me about Sachin
+        </span>
+
+      </div>
+
+    </div>
+
+
+    <button
+      type="button"
+      class="ai-close-button"
+      (click)="toggleChat()">
+
+      ×
+
+    </button>
+
+  </div>
+
+
+  <!-- =====================================
+       CHAT BODY
+  ====================================== -->
+
+  <div
+    #chatBody
+    class="ai-chat-body">
+
+
+    <!-- Welcome -->
+
+    <div
+      *ngIf="messages.length === 1"
+      class="ai-welcome">
+
+      <div class="welcome-icon">
+        SK
+      </div>
+
+      <h4>
+        Hi, I'm Sachin's AI Assistant
+      </h4>
+
+      <p>
+        Ask me about Sachin's experience,
+        projects, technical skills or career.
+      </p>
+
+    </div>
+
+
+    <!-- Messages -->
+
+    <div
+      *ngFor="let message of messages"
+      class="chat-message"
+      [class.user-message]="message.sender === 'user'"
+      [class.ai-message]="message.sender === 'ai'">
+
+
+      <!-- AI Avatar -->
+
+      <div
+        *ngIf="message.sender === 'ai'"
+        class="message-avatar">
+
+        SK
+
+      </div>
+
+
+      <!-- Message -->
+
+      <div class="message-bubble">
+
+        {{ message.text }}
+
+      </div>
+
+    </div>
+
+
+    <!-- =====================================
+         TYPING INDICATOR
+    ====================================== -->
+
+    <div
+      *ngIf="isLoading"
+      class="chat-message ai-message">
+
+      <div class="message-avatar">
+        ✦
+      </div>
+
+      <div class="typing">
+
+        <span></span>
+
+        <span></span>
+
+        <span></span>
+
+      </div>
+
+    </div>
+
+
+    <!-- =====================================
+         SUGGESTED QUESTIONS
+    ====================================== -->
+
+    <div
+      *ngIf="messages.length === 1 && !isLoading"
+      class="suggested-questions">
+
+      <p>
+        Try asking:
+      </p>
+
+
+      <button
+        type="button"
+        (click)="askQuestion('Tell me about Sachin')">
+
+        About Sachin
+
+      </button>
+
+
+      <button
+        type="button"
+        (click)="askQuestion('Tell me about Sachin Java experience')">
+
+        Java Experience
+
+      </button>
+
+
+      <button
+        type="button"
+        (click)="askQuestion('What projects has Sachin worked on?')">
+
+        Projects
+
+      </button>
+
+
+      <button
+        type="button"
+        (click)="askQuestion('What are Sachin technical skills?')">
+
+        Skills
+
+      </button>
+
+
+      <button
+        type="button"
+        (click)="askQuestion('How can I contact Sachin?')">
+
+        Contact
+
+      </button>
+
+    </div>
+
+
+  </div>
+
+
+  <!-- =====================================
+       INPUT
+  ====================================== -->
+
+  <div class="ai-chat-input">
+
+
+    <input
+      type="text"
+      [(ngModel)]="userMessage"
+      placeholder="Ask about Sachin..."
+      [disabled]="isLoading"
+      (keydown.enter)="onEnter($event)"
+    />
+
+
+    <button
+      type="button"
+      class="ai-send-button"
+      [disabled]="isLoading || !userMessage.trim()"
+      (click)="sendMessage()">
+
+      ↑
+
+    </button>
+
+
+  </div>
+
+
+  <!-- FOOTER -->
+
+  <!-- <div class="ai-chat-footer">
+
+    Powered by Sachin AI
+
+  </div> -->
+
+
+</div>
