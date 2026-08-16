@@ -11,7 +11,9 @@ export interface ChatResponse {
 })
 export class ChatService {
 
-    private apiUrl = 'http://localhost:8080/api/chat';
+    // private apiUrl = 'http://localhost:8080/api/chat';
+
+    private apiUrl='https://sachin-ai-backend-h9ue.onrender.com/api/chat';
 
   constructor(private http: HttpClient) {}
 

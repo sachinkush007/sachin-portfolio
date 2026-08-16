@@ -1,7 +1,7 @@
 import { bootstrapApplication } from '@angular/platform-browser';
 import { AppComponent } from './app/app.component';
 import { provideHttpClient } from '@angular/common/http';
-import { Routes } from '@angular/router';
+import { provideRouter, Routes } from '@angular/router';
 import { AiChatComponent } from './app/component/ai-chat/ai-chat.component';
 
 const routes: Routes = [
@@ -19,6 +19,7 @@ bootstrapApplication(AppComponent,
     {
   providers: [
     provideHttpClient()
+
   ]
 }
 ).catch(err => console.error(err));

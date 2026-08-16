@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ChatService } from './service/chat.service';
 import { FormsModule } from '@angular/forms';
-import { RouterOutlet } from "@angular/router";
+import { RouterOutlet, RouterLink, RouterLinkActive } from "@angular/router";
 import { AiChatComponent } from './component/ai-chat/ai-chat.component';
 
 interface ChatMessage {
@@ -13,7 +13,7 @@ interface ChatMessage {
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, FormsModule, RouterOutlet,AiChatComponent],
+  imports: [CommonModule, FormsModule, RouterOutlet, AiChatComponent, RouterLink,RouterLinkActive],
   templateUrl: './app.component.html'
 })
 
@@ -80,4 +80,12 @@ export class AppComponent {
 
   toggleMenu() { this.menuOpen = !this.menuOpen; }
   closeMenu() { this.menuOpen = false; }
+
+//   openAIChat(): void {
+//   const aiButton = document.querySelector('.ai-chat-button') as HTMLElement;
+
+//   if (aiButton) {
+//     aiButton.click();
+//   }
+// }
 }
